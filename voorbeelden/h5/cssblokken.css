@@ -1,0 +1,24 @@
+div#wrapper {
+	width: 900px;
+	margin: auto;
+}
+
+header, nav, article, footer {
+	background-color: lightblue;
+	padding: 10px;
+	margin: 10px;
+}
+
+article {
+	height: 300px;
+}
+
+footer {
+	clear: both;
+}
+
+div#afbeelding {
+	margin: 10px;
+	float: right;
+	width: 300px;
+}
