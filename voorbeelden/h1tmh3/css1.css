@@ -1,0 +1,39 @@
+body {
+   background-color: lightblue;
+   font-family: Verdana;
+}
+
+h1 {
+   color: red;
+   font-size: 32pt;
+   text-align: center;
+}
+
+a {
+	  color: blue;
+}
+	 
+a:hover {
+	color: darkblue;
+	text-decoration: none;
+	cursor: help;
+}
+
+ul {
+	list-style-type: square;
+	color: blue;
+}
+
+ol {
+	list-style-type: upper-roman;
+}
+
+table {
+	border: 5px solid green;
+	border-collapse: collapse;
+	width: 250px;
+}
+	 
+td {
+   border: 5px solid green;
+}
