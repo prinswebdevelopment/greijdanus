@@ -1,0 +1,18 @@
+body {
+	margin: 0;
+}
+
+.flex-container {
+	display: flex;
+}
+
+.flex-container div {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.flex-container div img{
+	flex-grow: 1;
+	text-align: center;
+	width: 100%;
+}
