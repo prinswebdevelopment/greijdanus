@@ -1,0 +1,34 @@
+/* Extra small devices (portrait phones, less than 576px) */
+/* Let op geen media query, dit is de standaard waar je in de css vanuit gaat */
+
+body {
+    background-color: lightblue;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+    body {
+        background-color: lightgreen;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    body {
+        background-color: lightcoral;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    body {
+        background-color: lightseagreen;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-color: lightsalmon;
+    }
+}
