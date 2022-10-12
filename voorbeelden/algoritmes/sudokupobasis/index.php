@@ -19,8 +19,8 @@ $sudoku = array(
 $opties = range(1,count($sudoku));
 
 // loop door de sudoku rij voor rij, kolom voor kolom
-foreach($sudoku as $y => $rij) {
-    foreach($rij as $x => $veld) {
+foreach($sudoku as $index1 => $rij) {
+    foreach($rij as $index2 => $veld) {
         // als veld de waarde 0 heeft zorg dan dat dit wijzigt in een array met alle opties
         if($veld == 0) {
             $veld = $opties;
@@ -34,18 +34,18 @@ foreach($sudoku as $y => $rij) {
 
         // elemineer alle waardes uit de array die al in de kolom voorkomen
         if(is_array($veld)) {
-            $veld = elimineer_kolom($veld, $x, $sudoku);
+            $veld = elimineer_kolom($veld, $index1, $sudoku);
         }
 
         // elemineer alle waardes uit de array die al in het blok voorkomen
         if(is_array($veld)) {
-            $veld = elimineer_blok($veld, $x, $y, $sudoku);
+            $veld = elimineer_blok($veld, $index1, $index2, $sudoku);
         }
 
         // ... dit is de basis, maar niet genoeg om alle sudoku's op te lossen, maak het algoritme hier verder ...
 
         // plaats de gevonden waarde(s) weer terug in de sudoku
-        $sudoku[$y][$x] = $veld;
+        $sudoku[$index1][$index2] = $veld;
 
     }
 }
