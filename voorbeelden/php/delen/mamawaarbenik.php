@@ -35,7 +35,7 @@ while($posKoe < 16 && $posSchaap < 16 && $posHond < 16 && $posPaard < 16) {
 
     echo "Koe: $posKoe, Hond: $posHond, Schaap: $posSchaap, Paard: $posPaard\n";
     
-    sleep(1)
+    sleep(1);
 } 
 
 echo "Spel afgelopen";
